@@ -4,7 +4,7 @@ pcos_ingredients.csv
 test_twilio.py
 twilio_pms.py
 twilio_pms_bot2.py
-insert_recipies.py
-ninja_recipies.py
+insert_recipes.py
+ninja_recipes.py
 .DS_Store
 .streamlit/
