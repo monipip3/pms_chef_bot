@@ -33,7 +33,7 @@ Your data is secure and not sold to any third party and follows GDPR guidelines.
 
 
 st.subheader(":red[Required Fields]")
-username= st.text_input(":red[Username]",key="username",max_chars=25,help='required')
+email = st.text_input(":red[email]",key="email",max_chars=25,help='required')
 pwd = st.text_input(":red[Password]",key="pwd",type='password',max_chars=15,help='required')
 
 st.subheader(":blue[Optional Fields to improve user experience]")
@@ -46,13 +46,13 @@ luteal_length = st.text_input("Average luteal length in days",key="luteal_length
 
 
 if st.button("Submit"): 
-	user_df = pd.concat([pd.Series(username),pd.Series(pwd),pd.Series(cycle_dt),pd.Series(cycle_length),pd.Series(period_length),pd.Series(luteal_length)],axis=1)
-	user_df.columns = ['username','password','last_cycle_date','cycle_length','period_length','luteal_length']
+	user_df = pd.concat([pd.Series(email),pd.Series(pwd),pd.Series(cycle_dt),pd.Series(cycle_length),pd.Series(period_length),pd.Series(luteal_length)],axis=1)
+	user_df.columns = ['email','password','last_cycle_date','cycle_length','period_length','luteal_length']
 
 	db = client.users
 	collection = db["user_logins"]
 
-	if username and  pwd:
+	if email and  pwd:
 		records = json.loads(user_df.T.to_json()).values()
 		collection.insert_many(records)
 		time.sleep(3)
