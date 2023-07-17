@@ -60,6 +60,8 @@ if st.button("Submit"):
 	else:
 		st.text("Please configure a username and password")
 		
-	client.close()
+
+time.sleep(2)
+client.close()
 
 
