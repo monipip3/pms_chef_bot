@@ -8,6 +8,11 @@ from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 from urllib.parse import quote_plus
 from streamlit_extras.switch_page_button import switch_page
+import hashlib
+
+def make_hashes(password):
+    password = password.encode()
+    return(hashlib.sha3_256(password).hexdigest())
 
 
 username = quote_plus(st.secrets["mongodb"]["mongo_username"])
@@ -19,8 +24,6 @@ uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retry
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
-
-
 
 
 #update user database with username, password, last cycle date, average cycle length, average period length, average luteal length
@@ -36,6 +39,8 @@ st.subheader(":red[Required Fields]")
 email = st.text_input(":red[email]",key="email",max_chars=25,help='required')
 pwd = st.text_input(":red[Password]",key="pwd",type='password',max_chars=15,help='required')
 
+pwd_hashed = make_hashes(pwd)
+
 st.subheader(":blue[Optional Fields to improve user experience]")
 
 cycle_dt= st.date_input("Last cycle date YYYY-MM-DD",value = None, key="last_cycle_date",help="Utilized to show you recipes based on your cycle phase")
@@ -46,7 +51,7 @@ luteal_length = st.text_input("Average luteal length in days",key="luteal_length
 
 
 if st.button("Submit"): 
-	user_df = pd.concat([pd.Series(email),pd.Series(pwd),pd.Series(cycle_dt),pd.Series(cycle_length),pd.Series(period_length),pd.Series(luteal_length)],axis=1)
+	user_df = pd.concat([pd.Series(email),pd.Series(pwd_hashed),pd.Series(cycle_dt),pd.Series(cycle_length),pd.Series(period_length),pd.Series(luteal_length)],axis=1)
 	user_df.columns = ['email','password','last_cycle_date','cycle_length','period_length','luteal_length']
 
 	db = client.users

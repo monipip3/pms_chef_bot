@@ -5,6 +5,11 @@ from pymongo.server_api import ServerApi
 from urllib.parse import quote_plus
 from streamlit_extras.switch_page_button import switch_page
 import time
+import hashlib
+
+def make_hashes(password):
+    password = password.encode()
+    return(hashlib.sha3_256(password).hexdigest())
 
 username = quote_plus(st.secrets["mongodb"]["mongo_username"])
 password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
@@ -23,14 +28,14 @@ hide_pages(["Create_Account","Profile_Recipes"])
 
 email= st.text_input(":red[Username]",key="username",max_chars=25,help='required')
 pwd = st.text_input(":red[Password]",key="pwd",type='password',max_chars=15,help='required')
-
+pwd_hashed = make_hashes(pwd)
 
 if st.button("Login"):
     if email and  pwd:
-        cursor = collection.find({"$and":[{"email":email},{"password":pwd}]})
+        cursor = collection.find({"$and":[{"email":email},{"password":pwd_hashed}]})
         if cursor != None:
             for record in cursor:
-                if record["email"] == email and record["password"] == pwd:
+                if record["email"] == email and record["password"] == pwd_hashed:
                     switch_page("Profile_Recipes")
                 else:
                     st.warning("Please try again")
