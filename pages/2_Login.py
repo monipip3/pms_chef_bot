@@ -29,6 +29,7 @@ hide_pages(["Create_Account","Profile_Recipes"])
 email= st.text_input(":red[Username]",key="username",max_chars=25,help='required')
 pwd = st.text_input(":red[Password]",key="pwd",type='password',max_chars=15,help='required')
 pwd_hashed = make_hashes(pwd)
+email_hashed = make_hashes(email)
 
 if st.button("Login"):
     if email and  pwd:
@@ -36,6 +37,8 @@ if st.button("Login"):
         if cursor != None:
             for record in cursor:
                 if record["email"] == email and record["password"] == pwd_hashed:
+                    st.session_state['email'] = email
+                    st.session_state['pwd_hashed'] = pwd_hashed
                     switch_page("Profile_Recipes")
                 else:
                     st.warning("Please try again")

@@ -53,12 +53,13 @@ luteal_length = st.text_input("Average luteal length in days",key="luteal_length
 if st.button("Submit"): 
 	user_df = pd.concat([pd.Series(email),pd.Series(pwd_hashed),pd.Series(cycle_dt),pd.Series(cycle_length),pd.Series(period_length),pd.Series(luteal_length)],axis=1)
 	user_df.columns = ['email','password','last_cycle_date','cycle_length','period_length','luteal_length']
+	user_df['last_cycle_date'] = pd.to_datetime(user_df['last_cycle_date'],utc=True)
 
 	db = client.users
 	collection = db["user_logins"]
 
 	if email and  pwd:
-		records = json.loads(user_df.T.to_json()).values()
+		records = json.loads(user_df.T.to_json(date_format='iso')).values()
 		collection.insert_many(records)
 		time.sleep(3)
 		switch_page("Profile_Recipes")
