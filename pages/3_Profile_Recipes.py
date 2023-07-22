@@ -18,13 +18,20 @@ collection = db["user_logins"]
 
 hide_pages(["Create_Account","Login"])
 
-email = st.session_state["email"]
-pwd_hashed = st.session_state["pwd_hashed"]
 
-# cursor = collection.find({"$and":[{"email":email},{"password":pwd_hashed}]})
-# if cursor != None:
-#     for record in cursor:
-#         if record["email"] == email and record["password"] == pwd_hashed:
+st.write(st.session_state.cache)
+
+for k in st.session_state.keys():
+    st.session_state[k] = st.session_state[k]
+    st.text(st.session_state[k])
+
+#email = st.session_state["email"]
+#pwd_hashed = st.session_state["pwd_hashed"]
 
 
-# st.text("TBD")
+st.header("Welcome to your Profile")#
+
+st.subheader("Below are your cycle stats that you have provided.")
+
+#st.dataframe([st.session_state['last_cycle_date'],st.session_state['period_length'],st.session_state['luteal_length']])
+

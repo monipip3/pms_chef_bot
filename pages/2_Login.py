@@ -7,6 +7,8 @@ from streamlit_extras.switch_page_button import switch_page
 import time
 import hashlib
 
+hide_pages(["Create_Account","Profile_Recipes"])
+
 def make_hashes(password):
     password = password.encode()
     return(hashlib.sha3_256(password).hexdigest())
@@ -23,11 +25,10 @@ client = MongoClient(uri, server_api=ServerApi('1'))
 db = client.users
 collection = db["user_logins"]
 
-hide_pages(["Create_Account","Profile_Recipes"])
 
 
-email= st.text_input(":red[Username]",key="username",max_chars=25,help='required')
-pwd = st.text_input(":red[Password]",key="pwd",type='password',max_chars=15,help='required')
+email= st.text_input(":red[email]",max_chars=25,help='required')
+pwd = st.text_input(":red[Password]",type='password',max_chars=15,help='required')
 pwd_hashed = make_hashes(pwd)
 email_hashed = make_hashes(email)
 
@@ -37,8 +38,12 @@ if st.button("Login"):
         if cursor != None:
             for record in cursor:
                 if record["email"] == email and record["password"] == pwd_hashed:
-                    st.session_state['email'] = email
-                    st.session_state['pwd_hashed'] = pwd_hashed
+                    # Instantiate the Session State Variables
+                    if 'cache' not in st.session_state:
+                        st.session_state.cache = {'last_cycle_date': record["last_cycle_date"], 'period_length': record["period_length"], 'luteal_length': record["luteal_length"]}
+                    # st.session_state["last_cycle_date"] = record["last_cycle_date"]
+                    # st.session_state["period_length"] = record["period_length"]
+                    # st.session_state["luteal_length"] = record["luteal_length"]
                     switch_page("Profile_Recipes")
                 else:
                     st.warning("Please try again")
@@ -46,6 +51,9 @@ if st.button("Login"):
             st.warning("Please try again")
     else:
         st.warning("Please try again")
+
+
+
 
 time.sleep(1)
 client.close()
