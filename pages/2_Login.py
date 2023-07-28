@@ -6,6 +6,7 @@ from urllib.parse import quote_plus
 from streamlit_extras.switch_page_button import switch_page
 import time
 import hashlib
+import pandas as pd 
 
 hide_pages(["Create_Account","Profile_Recipes"])
 
@@ -38,12 +39,23 @@ if st.button("Login"):
         if cursor != None:
             for record in cursor:
                 if record["email"] == email and record["password"] == pwd_hashed:
+                    @st.cache_data
+                    def get_cycle_info(persist=True):
+                        client = MongoClient(uri, server_api=ServerApi('1'))
+                        db = client.users
+                        collection = db["user_logins"]
+                        cursor = collection.find({"$and":[{"email":email},{"password":pwd_hashed}]})
+                        return(cursor)
                     # Instantiate the Session State Variables
                     if 'cache' not in st.session_state:
-                        st.session_state.cache = {'last_cycle_date': record["last_cycle_date"], 'period_length': record["period_length"], 'luteal_length': record["luteal_length"]}
-                    # st.session_state["last_cycle_date"] = record["last_cycle_date"]
-                    # st.session_state["period_length"] = record["period_length"]
-                    # st.session_state["luteal_length"] = record["luteal_length"]
+                        
+                        st.session_state.cache = {'last_cycle_date': record["last_cycle_date"], 'period_length': record["period_length"], 'luteal_length': record["luteal_length"],"cycle_length":record["cycle_length"]}
+                        #st.write(st.session_state.cache)
+                        tmp_cycle_df = pd.DataFrame(st.session_state.cache,index=[0])
+                        tmp_cycle_df.to_csv('tmp_cycle_info.csv',index=False)
+                        #st.dataframe(tmp_cycle_df)
+
+
                     switch_page("Profile_Recipes")
                 else:
                     st.warning("Please try again")
