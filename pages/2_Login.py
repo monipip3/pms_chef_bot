@@ -8,7 +8,7 @@ import time
 import hashlib
 import pandas as pd 
 
-hide_pages(["Create_Account","Profile_Recipes"])
+hide_pages(["Create_Account","Profile"])
 
 def make_hashes(password):
     password = password.encode()
@@ -56,7 +56,7 @@ if st.button("Login"):
                         #st.dataframe(tmp_cycle_df)
 
 
-                    switch_page("Profile_Recipes")
+                    switch_page("Profile")
                 else:
                     st.warning("Please try again")
         else:

@@ -9,6 +9,9 @@ from pymongo.server_api import ServerApi
 from urllib.parse import quote_plus
 from streamlit_extras.switch_page_button import switch_page
 import hashlib
+from st_pages import Page, show_pages, hide_pages
+
+hide_pages(["Profile"])
 
 def make_hashes(password):
     password = password.encode()
@@ -54,7 +57,7 @@ if st.button("Submit"):
 	user_df = pd.concat([pd.Series(email),pd.Series(pwd_hashed),pd.Series(cycle_dt),pd.Series(cycle_length),pd.Series(period_length),pd.Series(luteal_length)],axis=1)
 	user_df.columns = ['email','password','last_cycle_date','cycle_length','period_length','luteal_length']
 	user_df['last_cycle_date'] = pd.to_datetime(user_df['last_cycle_date'],utc=True)
-
+	user_df.iloc[:,2:].to_csv('tmp_cycle_info.csv',index=False)
 	db = client.users
 	collection = db["user_logins"]
 
