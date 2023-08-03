@@ -65,7 +65,7 @@ if st.button("Submit"):
 		records = json.loads(user_df.T.to_json(date_format='iso')).values()
 		collection.insert_many(records)
 		time.sleep(3)
-		switch_page("Profile_Recipes")
+		switch_page("Profile")
 	else:
 		st.text("Please configure a username and password")
 		

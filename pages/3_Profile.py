@@ -1,20 +1,7 @@
 import streamlit as st
-from pymongo.mongo_client import MongoClient
-from pymongo.server_api import ServerApi
-from urllib.parse import quote_plus
 from st_pages import Page, show_pages, hide_pages
 import pandas as pd
-
-username = quote_plus(st.secrets["mongodb"]["mongo_username"])
-password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
-db_name = st.secrets["mongodb"]["mongo_dbname"]
-uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
-
-
-# Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'))
-db = client.recipes
-collection = db["ninja_api"]
+from streamlit_extras.switch_page_button import switch_page
 
 # if 'cache' not in st.session_state:
 #     cursor = get_cycle_info()
@@ -53,36 +40,53 @@ if cycle_day > 40 or cycle_length < cycle_day:
         cycle_day = tmp_cycle_info['cycle_day'].values[0]
         st.dataframe(tmp_cycle_info)
         if (cycle_day  - cycle_length) < period_length:
-            phase = 'menstrual'
+            phase = 'Menstrual'
         elif cycle_day < period_length:
-            phase = 'menstrual'
+            phase = 'Menstrual'
         elif cycle_day > period_length and cycle_day < 14:
-            phase = 'follicular'
+            phase = 'Follicular'
         elif cycle_day > 14 and cycle_day < 19:
-            phase = 'fertile window'
+            phase = 'Ovulatory'
         else:
-            phase = 'luteal'
-        st.subheader(f" According to your cycle info, you are in your {phase} phase")
+            phase = 'Luteal'
         if phase:
-            if st.button(f"Go to Recipes for your {phase} phase"):
-                st.text("TBD")
+            file =  open("tmp_phase.txt","w")
+            file.write(f"{phase} Phase") 
+            file.close()
 
+        st.subheader(f" According to your cycle info, you are in your {phase.lower()} phase")
+        # with open("tmp_phase.txt","r") as f:
+        #     phase = f.readlines()
+        #     phase = phase[0]
+        #     f.close()
+        # if st.button(f"Go to Recipes for your {phase}"):
+        #     switch_page("Recipes")
+ 
 else:
     st.dataframe(tmp_cycle_info)
     if (cycle_day  - cycle_length) < period_length:
-        phase = 'menstrual'
+        phase = 'Menstrual'
     elif cycle_day < period_length:
-        phase = 'menstrual'
+        phase = 'Menstrual'
     elif cycle_day > period_length and cycle_day < 14:
-        phase = 'follicular'
+        phase = 'Follicular'
     elif cycle_day > 14 and cycle_day < 19:
-        phase = 'fertile window'
+        phase = 'Ovulatory'
     else:
-        phase = 'luteal'
-
-
-    st.subheader(f" According to your cycle info, you are in your {phase} phase")
+        phase = 'Luteal'
     if phase:
-        if st.button(f"Go to Recipes for your {phase} phase"):
-            st.text("TBD")
+        file =  open("tmp_phase.txt","w")
+        file.write(f"{phase} Phase") 
+        file.close()
+
+    st.subheader(f" According to your cycle info, you are in your {phase.lower()} phase")
+    
+with open("tmp_phase.txt","r") as f:
+    phase = f.readlines()
+    phase = phase[0]
+    f.close()
+if st.button(f"Go to Recipes for your {phase}"):
+    switch_page("Recipes")
+
+
 
