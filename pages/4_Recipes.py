@@ -21,7 +21,7 @@ collection = db["ingredients"]
 
 with open("tmp_phase.txt") as f:
     phase = f.readlines()[0]
-    st.text(phase)
+    #st.text(phase)
 
 st.subheader(f"Below are a list of ingredients / food items recommended to eat during your {phase}")
 
@@ -38,3 +38,8 @@ if cursor != None:
         # tmp_df = tmp_df[['Ingredient',"Type"]]
         # st.dataframe(tmp_df)
 st.dataframe(ingredients_df[['Ingredient','Type']])
+
+ingredients = ingredients_df['Ingredient'].values
+
+choice = st.selectbox('Pick a food item to look up recipes for',ingredients)
+

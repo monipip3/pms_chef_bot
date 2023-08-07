@@ -8,7 +8,7 @@ import time
 import hashlib
 import pandas as pd 
 
-hide_pages(["Create_Account","Profile"])
+hide_pages(["Create_Account","Profile","Recipes"])
 
 def make_hashes(password):
     password = password.encode()

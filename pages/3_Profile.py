@@ -39,13 +39,13 @@ if cycle_day > 40 or cycle_length < cycle_day:
         tmp_cycle_info['cycle_day'] = (tmp_cycle_info["today"] - tmp_cycle_info["last_cycle_date_updated"]).dt.days
         cycle_day = tmp_cycle_info['cycle_day'].values[0]
         st.dataframe(tmp_cycle_info)
-        if (cycle_day  - cycle_length) < period_length:
+        if (cycle_length  - cycle_day) < period_length:
             phase = 'Menstrual'
         elif cycle_day < period_length:
             phase = 'Menstrual'
-        elif cycle_day > period_length and cycle_day < 14:
+        elif cycle_day > period_length and cycle_day < 13:
             phase = 'Follicular'
-        elif cycle_day > 14 and cycle_day < 19:
+        elif cycle_day >= 13 and cycle_day < 19:
             phase = 'Ovulatory'
         else:
             phase = 'Luteal'
