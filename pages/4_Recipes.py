@@ -41,5 +41,38 @@ st.dataframe(ingredients_df[['Ingredient','Type']])
 
 ingredients = ingredients_df['Ingredient'].values
 
+collection2 = db["recipes"]
+
+
 choice = st.selectbox('Pick a food item to look up recipes for',ingredients)
 
+cursor2 = collection2.find({"query":f"{choice}"})
+recipes = [record for record in cursor2]
+
+recipes_df = pd.DataFrame(recipes,columns=recipes[0].keys())
+
+recipe_chosen = st.radio("Pick a recipe",recipes_df.title.values)
+
+#st.text(recipes[0].keys())
+
+recipe_ingredients = recipes_df[recipes_df.title == recipe_chosen][['ingredients']].values[0][0].split("|")
+recipe_servings = recipes_df[recipes_df.title == recipe_chosen][['servings']].values[0][0]
+recipe_instructions = recipes_df[recipes_df.title == recipe_chosen][['instructions']].values[0][0]
+
+
+st.markdown("## Ingredients")
+for i in recipe_ingredients:
+    st.markdown(f"+ {i}\n")
+
+
+
+st.markdown(f"""
+## Servings
+{recipe_servings}
+
+## Instructions
+{recipe_instructions}
+
+
+
+""")

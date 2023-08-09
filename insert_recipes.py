@@ -58,6 +58,6 @@ for i in recipe_files_w_data:
 	
 			#print(recipe_dict.items())
 			#print("####################/n")
-			#collection.insert_many(recipe_dict)
+			#collection.insert_many(recipe_dict)collection.insert_many(recipe_dict)
 			collection.insert_one(recipe_dict)
 		print(f'Inserted {i} data into DB ')
