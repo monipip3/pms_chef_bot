@@ -2,6 +2,7 @@ import streamlit as st
 from st_pages import Page, show_pages, hide_pages
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
+import os 
 
 # if 'cache' not in st.session_state:
 #     cursor = get_cycle_info()
@@ -80,7 +81,10 @@ else:
         file.close()
 
     st.subheader(f" According to your cycle info, you are in your {phase.lower()} phase")
-    
+
+
+#os.remove("tmp_cycle_info.csv")
+
 with open("tmp_phase.txt","r") as f:
     phase = f.readlines()
     phase = phase[0]

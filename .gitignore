@@ -8,4 +8,4 @@ ninja_recipes.py
 .DS_Store
 .streamlit/
 *.csv
-*.txt
+tmp_phase.txt
