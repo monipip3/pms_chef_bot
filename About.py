@@ -4,7 +4,7 @@ from st_pages import Page, show_pages, hide_pages
 
 
 
-hide_pages(["Create_Account","Login","Profile"])
+hide_pages(["Create_Account","Login","Profile","Recipes"])
 
 st.title("PMS Chef Bot :female-cook: :seedling: ")
 
