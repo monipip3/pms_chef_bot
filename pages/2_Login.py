@@ -7,6 +7,7 @@ from streamlit_extras.switch_page_button import switch_page
 import time
 import hashlib
 import pandas as pd 
+import ssl
 
 hide_pages(["Create_Account","Profile","Recipes"])
 
@@ -22,7 +23,7 @@ uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retry
 
 
 # Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'))
+client = MongoClient(uri, server_api=ServerApi('1'), ssl_cert_reqs=ssl.CERT_NONE)
 db = client.users
 collection = db["user_logins"]
 

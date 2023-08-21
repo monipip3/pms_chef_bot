@@ -10,6 +10,7 @@ from urllib.parse import quote_plus
 from streamlit_extras.switch_page_button import switch_page
 import hashlib
 from st_pages import Page, show_pages, hide_pages
+import ssl
 
 hide_pages(["Profile"])
 
@@ -26,7 +27,7 @@ uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retry
 
 
 # Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'))
+client = MongoClient(uri, server_api=ServerApi('1'),ssl_cert_reqs=ssl.CERT_NONE)
 
 
 #update user database with username, password, last cycle date, average cycle length, average period length, average luteal length

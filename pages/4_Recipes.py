@@ -6,6 +6,7 @@ from st_pages import Page, show_pages, hide_pages
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 import os 
+import ssl
 
 username = quote_plus(st.secrets["mongodb"]["mongo_username"])
 password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
@@ -14,7 +15,7 @@ uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retry
 
 
 # Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'))
+client = MongoClient(uri, server_api=ServerApi('1'), ssl_cert_reqs=ssl.CERT_NONE)
 db = client.ingredients
 collection = db["ingredients"]
 
