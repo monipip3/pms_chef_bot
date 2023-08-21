@@ -42,7 +42,7 @@ if st.button("Login"):
                 if record["email"] == email and record["password"] == pwd_hashed:
                     @st.cache_data
                     def get_cycle_info(persist=True):
-                        client = MongoClient(uri, server_api=ServerApi('1'))
+                        client = MongoClient(uri, server_api=ServerApi('1'),tlsAllowInvalidCertificates=True)
                         db = client.users
                         collection = db["user_logins"]
                         cursor = collection.find({"$and":[{"email":email},{"password":pwd_hashed}]})
