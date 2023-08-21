@@ -11,6 +11,9 @@ from streamlit_extras.switch_page_button import switch_page
 import hashlib
 from st_pages import Page, show_pages, hide_pages
 import ssl
+import certifi
+
+ca = certifi.where()
 
 hide_pages(["Profile"])
 
@@ -27,7 +30,7 @@ uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retry
 
 
 # Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'),tlsAllowInvalidCertificates=True)
+client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=ca)
 
 
 #update user database with username, password, last cycle date, average cycle length, average period length, average luteal length

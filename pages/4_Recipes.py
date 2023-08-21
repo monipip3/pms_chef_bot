@@ -6,7 +6,10 @@ from st_pages import Page, show_pages, hide_pages
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 import os 
-import ssl
+import certifi
+
+ca = certifi.where()
+
 
 username = quote_plus(st.secrets["mongodb"]["mongo_username"])
 password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
