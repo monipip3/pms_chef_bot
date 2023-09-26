@@ -7,9 +7,7 @@ from streamlit_extras.switch_page_button import switch_page
 import time
 import hashlib
 import pandas as pd 
-import certifi
 
-ca = certifi.where()
 
 hide_pages(["Create_Account","Profile","Recipes"])
 
@@ -21,11 +19,16 @@ username = quote_plus(st.secrets["mongodb"]["mongo_username"])
 password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
 db_name = st.secrets["mongodb"]["mongo_dbname"]
 
+# @st.cache_resource
+# def init_connection():
+#     return MongoClient(**st.secrets["mongodb"])
+
 uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
 
 
 # Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'), tlsCAFile=ca)
+#client = init_connection()
+client = MongoClient(uri, server_api=ServerApi('1'))
 db = client.users
 collection = db["user_logins"]
 
@@ -44,7 +47,7 @@ if st.button("Login"):
                 if record["email"] == email and record["password"] == pwd_hashed:
                     @st.cache_data
                     def get_cycle_info(persist=True):
-                        client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=ca)
+                        client = MongoClient(uri, server_api=ServerApi('1'))
                         db = client.users
                         collection = db["user_logins"]
                         cursor = collection.find({"$and":[{"email":email},{"password":pwd_hashed}]})
