@@ -26,9 +26,9 @@ def make_hashes(password):
 #password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
 #db_name = st.secrets["mongodb"]["mongo_dbname"]
 
-username = os.environ(["mongodb"]["mongo_username"])
-password = os.environ(["mongodb"]["mongo_pwd"])
-db_name = os.environ(["mongodb"]["mongo_dbname"])
+username = os.environ(["mongo_username"])
+password = os.environ(["mongo_pwd"])
+db_name = os.environ(["mongo_dbname"])
 
 uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
 
