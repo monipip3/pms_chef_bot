@@ -15,9 +15,13 @@ def make_hashes(password):
     password = password.encode()
     return(hashlib.sha3_256(password).hexdigest())
 
-username = quote_plus(st.secrets["mongodb"]["mongo_username"])
-password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
-db_name = st.secrets["mongodb"]["mongo_dbname"]
+#username = quote_plus(st.secrets["mongodb"]["mongo_username"])
+#password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
+#db_name = st.secrets["mongodb"]["mongo_dbname"]
+
+username = os.environ(["mongodb"]["mongo_username"])
+password = os.environ(["mongodb"]["mongo_pwd"])
+db_name = os.environ(["mongodb"]["mongo_dbname"])
 
 # @st.cache_resource
 # def init_connection():
