@@ -19,9 +19,9 @@ def make_hashes(password):
 #password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
 #db_name = st.secrets["mongodb"]["mongo_dbname"]
 
-username = os.environ(["mongo_username"])
-password = os.environ(["mongo_pwd"])
-db_name = os.environ(["mongo_dbname"])
+username = os.environ(['mongo_username'])
+password = os.environ(['mongo_pwd'])
+db_name = os.environ(['mongo_dbname'])
 
 # @st.cache_resource
 # def init_connection():
