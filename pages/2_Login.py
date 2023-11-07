@@ -8,6 +8,7 @@ import time
 import hashlib
 import pandas as pd 
 import os
+import certifi
 
 hide_pages(["Create_Account","Profile","Recipes"])
 
@@ -32,7 +33,7 @@ uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retry
 
 # Create a new client and connect to the server
 #client = init_connection()
-client = MongoClient(uri, server_api=ServerApi('1'))
+client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
 db = client.users
 collection = db["user_logins"]
 
