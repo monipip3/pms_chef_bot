@@ -15,7 +15,7 @@ import certifi
 
 ca = certifi.where()
 
-hide_pages(["Profile"])
+hide_pages(["Profile","Recipes"])
 
 def make_hashes(password):
     password = password.encode()
