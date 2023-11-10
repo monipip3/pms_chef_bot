@@ -23,7 +23,9 @@ uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retry
 
 
 # Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
+#client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
+client = MongoClient(uri, server_api=ServerApi('1'),tlsAllowInvalidCertificates=True)
+
 db = client.ingredients
 collection = db["ingredients"]
 

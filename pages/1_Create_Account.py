@@ -35,7 +35,8 @@ uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retry
 
 
 # Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
+#client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
+client = MongoClient(uri, server_api=ServerApi('1'),tlsAllowInvalidCertificates=True)
 
 
 
@@ -59,8 +60,8 @@ st.subheader(":blue[Optional Fields to improve user experience]")
 cycle_dt= st.date_input("Last cycle date YYYY-MM-DD",value = None, key="last_cycle_date",help="Utilized to show you recipes based on your cycle phase")
 cycle_length = st.text_input("Average cycle length in days",key="cycle_length",help="Utilized to show you recipes based on your cycle phase")
 period_length = st.text_input("Average period length in days",key="period_length",help="Utilized to show you recipes based on your cycle phase")
-luteal_length = st.text_input("Average luteal length in days",key="luteal_length",help="Utilized to show you recipes based on your cycle phase")
-
+luteal_length = st.text_input("Average luteal length in days, if you do not know put 11. It ranges from 10-17 days. It is days between ovulation till spotting or full bleed. ",key="luteal_length",help="Utilized to show you recipes based on your cycle phase")
+st.markdown("To learn mor about luteal phase see [here]([luteal length](https://www.clearblue.com/menstrual-cycle/luteal-phase))")
 
 
 if st.button("Submit"): 
