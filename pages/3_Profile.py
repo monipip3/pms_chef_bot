@@ -82,13 +82,15 @@ else:
 
     st.subheader(f" According to your cycle info, you are in your {phase.lower()} phase")
 
-
-with open("tmp_phase.txt","r") as f:
-    phase = f.readlines()
-    phase = phase[0]
-    f.close()
-if st.button(f"Go to Recipes for your {phase}"):
-    switch_page("Recipes")
+try:
+    with open("tmp_phase.txt","r") as f:
+        phase = f.readlines()
+        phase = phase[0]
+        f.close()
+    if st.button(f"Go to Recipes for your {phase}"):
+        switch_page("Recipes")
+except FileNotFoundError:
+    pass
 
 
 
