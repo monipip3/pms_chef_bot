@@ -2,6 +2,10 @@ import streamlit as st
 from st_pages import Page, show_pages, hide_pages
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
+from urllib.parse import quote_plus
+from pymongo.mongo_client import MongoClient
+import certifi
+from pymongo.server_api import ServerApi
 
 
 # if 'cache' not in st.session_state:
@@ -9,7 +13,7 @@ from streamlit_extras.switch_page_button import switch_page
 #     for record in cursor:
 #         st.session_state.cache = {'last_cycle_date': record["last_cycle_date"], 'period_length': record["period_length"], 'luteal_length': record["luteal_length"],"cycle_length":record["cycle_length"]}
 
-hide_pages(["Create_Account","Login"])
+hide_pages(["Create_Account","Login","About"])
 
 
 #email = st.session_state["email"]
@@ -55,7 +59,7 @@ if cycle_day > 40 or cycle_length < cycle_day:
             file.write(f"{phase} Phase") 
             file.close()
 
-        st.subheader(f" According to your cycle info, you are in your {phase.lower()} phase")
+        st.subheader(f" Current phase : {phase.lower()}")
         # with open("tmp_phase.txt","r") as f:
         #     phase = f.readlines()
         #     phase = phase[0]
@@ -80,7 +84,66 @@ else:
         file.write(f"{phase} Phase") 
         file.close()
 
-    st.subheader(f" According to your cycle info, you are in your {phase.lower()} phase")
+    st.subheader(f" Current phase: {phase.lower()}")
+
+
+#### connect to ingredient list 
+
+
+
+
+############For local debugging
+# username = quote_plus(st.secrets["mongodb"]["mongo_username"])
+# password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
+# db_name = st.secrets["mongodb"]["mongo_dbname"]
+# uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
+# #Create a new client and connect to the server
+# client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
+############
+
+
+
+######### For prod and heroku 
+username = os.getenv('mongo_username')
+password = os.getenv('mongo_pwd')
+db_name = os.getenv('mongo_dbname')
+uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
+# Create a new client and connect to the server
+client = MongoClient(uri, server_api=ServerApi('1'),tlsAllowInvalidCertificates=True)
+#####################
+
+uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
+
+db = client.ingredients
+collection = db["ingredients"]
+
+#cursor = collection.find({"$and":[{"email":email},{"password":pwd_hashed}]})
+
+with open("tmp_phase.txt") as f:
+    phase = f.readlines()[0]
+    #st.text(phase)
+
+st.subheader(f"Below are a list of ingredients / food items recommended to eat during your {phase}")
+
+cursor = collection.find({"Menstrual Phase":phase})
+ingredients_df = pd.DataFrame()
+if cursor != None:
+    for record in cursor:
+        tmp_df = tmp_df = pd.DataFrame.from_dict(record,orient="index").T
+        ingredients_df = pd.concat([ingredients_df,tmp_df],axis=0)
+            #tmp_df = pd.DataFrame.from_dict(v,orient="index").T
+            #t.text(tmp_df)
+        
+        # tmp_df.columns = ["id,ingredient","Phase","Type"]
+        # tmp_df = tmp_df[['Ingredient',"Type"]]
+        # st.dataframe(tmp_df)
+st.dataframe(ingredients_df[['Ingredient','Type']])
+
+ingredients = ingredients_df['Ingredient'].values
+
+###########################################################
+
+
 
 try:
     with open("tmp_phase.txt","r") as f:

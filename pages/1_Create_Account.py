@@ -22,21 +22,26 @@ def make_hashes(password):
     return(hashlib.sha3_256(password).hexdigest())
 
 
-#username = quote_plus(st.secrets["mongodb"]["mongo_username"])
-#password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
-#db_name = st.secrets["mongodb"]["mongo_dbname"]
+############For local debugging
+# username = quote_plus(st.secrets["mongodb"]["mongo_username"])
+# password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
+# db_name = st.secrets["mongodb"]["mongo_dbname"]
+# #Create a new client and connect to the server
+# uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
+# client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
+############
 
+
+
+######### For prod and heroku 
 username = os.getenv('mongo_username')
 password = os.getenv('mongo_pwd')
 db_name = os.getenv('mongo_dbname')
-
-
-uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
-
-
 # Create a new client and connect to the server
-#client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
+uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(uri, server_api=ServerApi('1'),tlsAllowInvalidCertificates=True)
+#####################
+
 
 
 

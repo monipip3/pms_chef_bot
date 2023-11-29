@@ -10,21 +10,33 @@ import certifi
 
 ca = certifi.where()
 
+hide_pages(["Create_Account","Login","About"])
 
-#username = quote_plus(st.secrets["mongodb"]["mongo_username"])
-#password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
-#db_name = st.secrets["mongodb"]["mongo_dbname"]
 
+
+
+############For local debugging
+# username = quote_plus(st.secrets["mongodb"]["mongo_username"])
+# password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
+# db_name = st.secrets["mongodb"]["mongo_dbname"]
+# uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
+# #Create a new client and connect to the server
+# client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
+############
+
+
+
+######### For prod and heroku 
 username = os.getenv('mongo_username')
 password = os.getenv('mongo_pwd')
 db_name = os.getenv('mongo_dbname')
+uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
+# Create a new client and connect to the server
+client = MongoClient(uri, server_api=ServerApi('1'),tlsAllowInvalidCertificates=True)
+#####################
 
 uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
 
-
-# Create a new client and connect to the server
-#client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
-client = MongoClient(uri, server_api=ServerApi('1'),tlsAllowInvalidCertificates=True)
 
 db = client.ingredients
 collection = db["ingredients"]
@@ -35,7 +47,7 @@ with open("tmp_phase.txt") as f:
     phase = f.readlines()[0]
     #st.text(phase)
 
-st.subheader(f"Below are a list of ingredients / food items recommended to eat during your {phase}")
+#st.subheader(f"Below are a list of ingredients / food items recommended to eat during your {phase}")
 
 cursor = collection.find({"Menstrual Phase":phase})
 ingredients_df = pd.DataFrame()
@@ -49,7 +61,7 @@ if cursor != None:
         # tmp_df.columns = ["id,ingredient","Phase","Type"]
         # tmp_df = tmp_df[['Ingredient',"Type"]]
         # st.dataframe(tmp_df)
-st.dataframe(ingredients_df[['Ingredient','Type']])
+#st.dataframe(ingredients_df[['Ingredient','Type']])
 
 ingredients = ingredients_df['Ingredient'].values
 
