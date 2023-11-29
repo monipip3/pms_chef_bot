@@ -6,6 +6,7 @@ from urllib.parse import quote_plus
 from pymongo.mongo_client import MongoClient
 import certifi
 from pymongo.server_api import ServerApi
+import os
 
 
 # if 'cache' not in st.session_state:
