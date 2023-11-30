@@ -73,9 +73,16 @@ choice = st.selectbox('Pick a food item to look up recipes for',ingredients)
 cursor2 = collection2.find({"query":f"{choice}"})
 recipes = [record for record in cursor2]
 
-recipes_df = pd.DataFrame(recipes,columns=recipes[0].keys())
+recipes_df = pd.DataFrame(recipes,columns=recipes[1].keys())
 
-recipe_chosen = st.radio("Pick a recipe",recipes_df.title.values)
+
+recipes_list = recipes_df.title.values
+if "Brown Rice" in recipes_list:
+    recipes_list.remove('Brown Rice')
+else:
+    pass
+
+recipe_chosen = st.radio("Pick a recipe",recipes_list)
 
 #st.text(recipes[0].keys())
 
