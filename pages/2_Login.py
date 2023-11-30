@@ -36,7 +36,7 @@ password = os.getenv('mongo_pwd')
 db_name = os.getenv('mongo_dbname')
 uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
 # Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'),tlsAllowInvalidCertificates=True)
+client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
 #####################
 
 
