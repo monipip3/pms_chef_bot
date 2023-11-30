@@ -55,18 +55,6 @@ if cycle_day > 40 or cycle_length < cycle_day:
             phase = 'Ovulatory'
         else:
             phase = 'Luteal'
-        if phase:
-            file =  open("tmp_phase.txt","w")
-            file.write(f"{phase} Phase") 
-            file.close()
-
-        st.subheader(f" Current phase : {phase.lower()}")
-        # with open("tmp_phase.txt","r") as f:
-        #     phase = f.readlines()
-        #     phase = phase[0]
-        #     f.close()
-        # if st.button(f"Go to Recipes for your {phase}"):
-        #     switch_page("Recipes")
  
 else:
     st.dataframe(tmp_cycle_info)
@@ -80,18 +68,9 @@ else:
         phase = 'Ovulatory'
     else:
         phase = 'Luteal'
-    if phase:
-        file =  open("tmp_phase.txt","w")
-        file.write(f"{phase} Phase") 
-        file.close()
-
-    st.subheader(f" Current phase: {phase.lower()}")
 
 
 #### connect to ingredient list 
-
-
-
 
 ############For local debugging
 # username = quote_plus(st.secrets["mongodb"]["mongo_username"])
@@ -119,6 +98,12 @@ db = client.ingredients
 collection = db["ingredients"]
 
 #cursor = collection.find({"$and":[{"email":email},{"password":pwd_hashed}]})
+
+if phase:
+    file =  open("tmp_phase.txt","w")
+    file.write(f"{phase} Phase") 
+    file.close()
+
 
 with open("tmp_phase.txt") as f:
     phase = f.readlines()[0]
