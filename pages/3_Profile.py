@@ -99,35 +99,34 @@ collection = db["ingredients"]
 
 #cursor = collection.find({"$and":[{"email":email},{"password":pwd_hashed}]})
 
-if phase:
-    file =  open("tmp_phase.txt","w")
-    file.write(f"{phase} Phase") 
-    file.close()
+try:
+    if phase:
+        file =  open("tmp_phase.txt","w")
+        file.write(f"{phase} Phase") 
+        file.close()
+        with open("tmp_phase.txt") as f:
+            phase = f.readlines()[0]
+            f.close()
+        st.subheader(f"Below are a list of ingredients / food items recommended to eat during your {phase}")
 
+        cursor = collection.find({"Menstrual Phase":phase})
+        ingredients_df = pd.DataFrame()
+        if cursor != None:
+            for record in cursor:
+                tmp_df = tmp_df = pd.DataFrame.from_dict(record,orient="index").T
+                ingredients_df = pd.concat([ingredients_df,tmp_df],axis=0)
+                    #tmp_df = pd.DataFrame.from_dict(v,orient="index").T
+                    #t.text(tmp_df)
+                
+                # tmp_df.columns = ["id,ingredient","Phase","Type"]
+                # tmp_df = tmp_df[['Ingredient',"Type"]]
+                # st.dataframe(tmp_df)
+        st.dataframe(ingredients_df[['Ingredient','Type']])
+        ingredients = ingredients_df['Ingredient'].values
 
-with open("tmp_phase.txt") as f:
-    phase = f.readlines()[0]
-    #st.text(phase)
+except NameError:
+    pass
 
-st.subheader(f"Below are a list of ingredients / food items recommended to eat during your {phase}")
-
-cursor = collection.find({"Menstrual Phase":phase})
-ingredients_df = pd.DataFrame()
-if cursor != None:
-    for record in cursor:
-        tmp_df = tmp_df = pd.DataFrame.from_dict(record,orient="index").T
-        ingredients_df = pd.concat([ingredients_df,tmp_df],axis=0)
-            #tmp_df = pd.DataFrame.from_dict(v,orient="index").T
-            #t.text(tmp_df)
-        
-        # tmp_df.columns = ["id,ingredient","Phase","Type"]
-        # tmp_df = tmp_df[['Ingredient',"Type"]]
-        # st.dataframe(tmp_df)
-st.dataframe(ingredients_df[['Ingredient','Type']])
-
-ingredients = ingredients_df['Ingredient'].values
-
-###########################################################
 
 
 
