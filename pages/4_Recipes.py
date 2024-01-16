@@ -63,8 +63,14 @@ if cursor != None:
         # st.dataframe(tmp_df)
 #st.dataframe(ingredients_df[['Ingredient','Type']])
 
-ingredients = ingredients_df['Ingredient'].values
-ingredients = ingredients.remove("Brown Rice")
+ingredients = list(ingredients_df['Ingredient'].values)
+
+  
+if "Brown Rice" in ingredients:
+    ingredients = ingredients.remove("Brown Rice")
+else:
+    pass
+
 
 collection2 = db["recipes"]
 
