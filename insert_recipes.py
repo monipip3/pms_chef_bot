@@ -22,7 +22,9 @@ client = MongoClient(uri, server_api=ServerApi('1'))
 db = client.ingredients
 
 # list files in recipes to open , read, then insert back into mongodb
-recipe_files = os.listdir('./recipes')
+#recipe_files = os.listdir('./recipes')
+
+recipe_files = ['Brown Rice_recipe.json']
 
 recipe_files_w_data = []
 
