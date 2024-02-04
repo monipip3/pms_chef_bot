@@ -64,18 +64,18 @@ if cursor != None:
 #st.dataframe(ingredients_df[['Ingredient','Type']])
 
 ingredients = list(ingredients_df['Ingredient'].values)
-
+ingredients2 = ingredients.remove("Brown Rice")
   
-if "Brown Rice" in ingredients:
-    ingredients = ingredients.remove("Brown Rice")
-else:
-    pass
+# if "Brown Rice" in ingredients:
+#     ingredients = ingredients.remove("Brown Rice")
+# else:
+#     pass
 
 
 collection2 = db["recipes"]
 
 
-choice = st.selectbox('Pick a food item to look up recipes for',ingredients)
+choice = st.selectbox('Pick a food item to look up recipes for',ingredients2)
 
 cursor2 = collection2.find({"query":f"{choice}"})
 recipes = [record for record in cursor2]
