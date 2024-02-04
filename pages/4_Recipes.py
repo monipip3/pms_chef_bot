@@ -64,7 +64,10 @@ if cursor != None:
 #st.dataframe(ingredients_df[['Ingredient','Type']])
 
 ingredients = list(ingredients_df['Ingredient'].values)
-ingredients2 = ingredients.remove("Brown Rice")
+try:
+    ingredients2 = ingredients.remove("Brown Rice")
+except ValueError:
+    ingredients2 = ingredients
   
 # if "Brown Rice" in ingredients:
 #     ingredients = ingredients.remove("Brown Rice")
