@@ -16,23 +16,23 @@ hide_pages(["Create_Account","Login","About"])
 
 
 ############For local debugging
-# username = quote_plus(st.secrets["mongodb"]["mongo_username"])
-# password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
-# db_name = st.secrets["mongodb"]["mongo_dbname"]
-# uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
-# #Create a new client and connect to the server
-# client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
+username = quote_plus(st.secrets["mongodb"]["mongo_username"])
+password = quote_plus(st.secrets["mongodb"]["mongo_pwd"])
+db_name = st.secrets["mongodb"]["mongo_dbname"]
+uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
+#Create a new client and connect to the server
+client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
 ############
 
 
 
 ######### For prod and heroku 
-username = os.getenv('mongo_username')
-password = os.getenv('mongo_pwd')
-db_name = os.getenv('mongo_dbname')
-uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
-# Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
+# username = os.getenv('mongo_username')
+# password = os.getenv('mongo_pwd')
+# db_name = os.getenv('mongo_dbname')
+# uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
+# # Create a new client and connect to the server
+# client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
 #####################
 
 uri = f"mongodb+srv://{username}:{password}@{db_name}.ouufw1l.mongodb.net/?retryWrites=true&w=majority"
@@ -64,14 +64,20 @@ if cursor != None:
 #st.dataframe(ingredients_df[['Ingredient','Type']])
 
 ingredients = list(ingredients_df['Ingredient'].values)
+# try:
+#     ingredients = ingredients.remove("Brown Rice")
+# except ValueError:
+#     pass
 
 collection2 = db["recipes"]
 
 
 choice = st.selectbox('Pick a food item to look up recipes for',ingredients)
 
+
 cursor2 = collection2.find({"query":f"{choice}"})
 recipes = [record for record in cursor2]
+
 
 recipes_df = pd.DataFrame(recipes,columns=recipes[0].keys())
 
@@ -80,7 +86,6 @@ recipes_list = recipes_df.title.values
 
 recipe_chosen = st.radio("Pick a recipe",recipes_list)
 
-#st.text(recipes[0].keys())
 
 recipe_ingredients = recipes_df[recipes_df.title == recipe_chosen][['ingredients']].values[0][0].split("|")
 recipe_servings = recipes_df[recipes_df.title == recipe_chosen][['servings']].values[0][0]
