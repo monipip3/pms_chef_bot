@@ -66,7 +66,7 @@ cycle_dt= st.date_input("Last cycle date YYYY-MM-DD",value = None, key="last_cyc
 cycle_length = st.text_input("Average cycle length in days",key="cycle_length",help="Utilized to show you recipes based on your cycle phase")
 period_length = st.text_input("Average period length in days",key="period_length",help="Utilized to show you recipes based on your cycle phase")
 luteal_length = st.text_input("Average luteal length in days, if you do not know put 11. It ranges from 10-17 days. It is days between ovulation till spotting or full bleed. ",key="luteal_length",help="Utilized to show you recipes based on your cycle phase")
-st.markdown("To learn mor about luteal phase see [here]([luteal length](https://www.clearblue.com/menstrual-cycle/luteal-phase))")
+st.markdown("To learn more about luteal phase see here : ([luteal length](https://www.clearblue.com/menstrual-cycle/luteal-phase))")
 
 
 if st.button("Submit"): 
