@@ -12,10 +12,11 @@ st.subheader("Welcome to your own menstrual cycle chef! ")
 
 st.markdown(
     """
-When I was struggling with strong PMS and heavy irregular periods, I did not want to go back on birth control as the proposed solution, especially 
-because I was trying to concieve. It took about two years measuring BBT and researching how to heal with nutrition to understand my body and finally able to have healthy cycles.
+When I was struggling with strong PMS and irregular periods, I did not want to go back on birth control as the proposed solution, especially 
+because I am trying to concieve. It took about two years measuring BBT and researching how to heal with nutrition to understand my body and finally able to have healthy cycles.
 
-I came across a list of foods :avocado: to eat per cycles that I thought, wouldn't it be great 
+I came across a list of foods :avocado: to eat per cycles. My cycles are normally healthier with less PMS and actual ovulations when I adhere to this list.
+Nutrition has a powerful affect on our bodies and I wanted this to be accessible to more people. I thought, wouldn't it be great 
 to be able to look at some recipes with these ingredients customized to my:
    
     + menstrual phase 🩸
