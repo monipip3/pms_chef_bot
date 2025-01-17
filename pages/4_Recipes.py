@@ -69,7 +69,7 @@ ingredients = list(ingredients_df['Ingredient'].values)
 # except ValueError:
 #     pass
 
-collection2 = db["recipes"]
+collection2 = db["recipes_filtered"]
 
 
 choice = st.selectbox('Pick a food item to look up recipes for',ingredients)
