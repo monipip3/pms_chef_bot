@@ -1,5 +1,5 @@
 import streamlit as st
-from st_pages import Page, show_pages, hide_pages
+from st_pages import Page, hide_pages
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 from urllib.parse import quote_plus
