@@ -9,7 +9,7 @@ from pymongo.server_api import ServerApi
 from urllib.parse import quote_plus
 from streamlit_extras.switch_page_button import switch_page
 import hashlib
-from st_pages import Page, show_pages, hide_pages
+from st_pages import Page, hide_pages
 import ssl
 import certifi
 
