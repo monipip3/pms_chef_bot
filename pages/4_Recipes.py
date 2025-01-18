@@ -2,7 +2,7 @@ import streamlit as st
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 from urllib.parse import quote_plus
-from st_pages import Page, show_pages, hide_pages
+from st_pages import Page, hide_pages
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 import os 
