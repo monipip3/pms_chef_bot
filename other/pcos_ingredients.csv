@@ -1,0 +1,142 @@
+Ingredient,Menstrual Phase,Type
+Barley,Follicular Phase,Grain
+Oat,Follicular Phase,Grain
+Rye,Follicular Phase,Grain
+Wheat,Follicular Phase,Grain
+Corn,Ovulatory Phase,Grain
+Quinoa,Ovulatory Phase,Grain
+Amaranth,Ovulatory Phase,Grain
+Brown Rice  ,Luteal Phase,Grain
+Millet,Luteal Phase,Grain
+Buckwheat,Menstrual Phase,Grain
+Wild Rice,Menstrual Phase,Grain
+Artichoke,Follicular Phase,Vegetable
+Broccoli,Follicular Phase,Vegetable
+Carrot,Follicular Phase,Vegetable
+Bib Lettuce,Follicular Phase,Vegetable
+Boston Lettuce,Follicular Phase,Vegetable
+Romaine Lettuce,Follicular Phase,Vegetable
+Parsley,Follicular Phase,Vegetable
+Green pears,Follicular Phase,Vegetable
+Rhubarb,Follicular Phase,Vegetable
+String Beans,Follicular Phase,Vegetable
+Zucchini,Follicular Phase,Vegetable
+Asparagus,Ovulatory Phase,Vegetable
+Red Bell Peppers,Ovulatory Phase,Vegetable
+Brussel Sprouts,Ovulatory Phase,Vegetable
+Chard,Ovulatory Phase,Vegetable
+Chicory,Ovulatory Phase,Vegetable
+Chive,Ovulatory Phase,Vegetable
+Dandelion,Ovulatory Phase,Vegetable
+Eggplant,Ovulatory Phase,Vegetable
+Endive,Ovulatory Phase,Vegetable
+Escarole,Ovulatory Phase,Vegetable
+Okra,Ovulatory Phase,Vegetable
+Scallion,Ovulatory Phase,Vegetable
+Spinach,Ovulatory Phase,Vegetable
+Tomato,Ovulatory Phase,Vegetable
+Cabbage,Luteal Phase,Vegetable
+Cauliflower,Luteal Phase,Vegetable
+Celery,Luteal Phase,Vegetable
+Collard,Luteal Phase,Vegetable
+Cucumber,Luteal Phase,Vegetable
+Daikon,Luteal Phase,Vegetable
+Garlic,Luteal Phase,Vegetable
+Ginger,Luteal Phase,Vegetable
+Leek,Luteal Phase,Vegetable
+Mustard Greens,Luteal Phase,Vegetable
+Onion,Luteal Phase,Vegetable
+Parsnip,Luteal Phase,Vegetable
+Pumpkin,Luteal Phase,Vegetable
+Radish,Luteal Phase,Vegetable
+Squash,Luteal Phase,Vegetable
+Sweet Potato,Luteal Phase,Vegetable
+Watercress,Luteal Phase,Vegetable
+Beet,Menstrual Phase,Vegetable
+Burdock,Menstrual Phase,Vegetable
+Dulse,Menstrual Phase,Vegetable
+Hijiki,Menstrual Phase,Vegetable
+Kale,Menstrual Phase,Vegetable
+Kelp,Menstrual Phase,Vegetable
+Kombu,Menstrual Phase,Vegetable
+Shiitake Mushroom,Menstrual Phase,Vegetable
+Button Mushroom,Menstrual Phase,Vegetable
+Wakame,Menstrual Phase,Vegetable
+Water Chesnut,Menstrual Phase,Vegetable
+Avocado,Follicular Phase,Fruit
+Grapefruit,Follicular Phase,Fruit
+Lemon,Follicular Phase,Fruit
+Lime,Follicular Phase,Fruit
+Orange,Follicular Phase,Fruit
+Plum,Follicular Phase,Fruit
+Pomegranate,Follicular Phase,Fruit
+Sour Cherry,Follicular Phase,Fruit
+Apricot,Ovulatory Phase,Fruit
+Cantaloupe,Ovulatory Phase,Fruit
+Coconut,Ovulatory Phase,Fruit
+Fig,Ovulatory Phase,Fruit
+Guava,Ovulatory Phase,Fruit
+Persimmon,Ovulatory Phase,Fruit
+Raspberry,Ovulatory Phase,Fruit
+Strawberry,Ovulatory Phase,Fruit
+Apple,Luteal Phase,Fruit
+Date,Luteal Phase,Fruit
+Peach,Luteal Phase,Fruit
+Pear,Luteal Phase,Fruit
+Raisin,Luteal Phase,Fruit
+Blackberry,Menstrual Phase,Fruit
+Blueberry,Menstrual Phase,Fruit
+Concord Grape,Menstrual Phase,Fruit
+Cranberry,Menstrual Phase,Fruit
+Watermelon,Menstrual Phase,Fruit
+Lychee,Follicular Phase,Fruit
+Black eyed pea,Follicular Phase,Legumes
+Green lentil,Follicular Phase,Legumes
+Lima bean,Follicular Phase,Legumes
+Mung bean,Follicular Phase,Legumes
+Split Pea,Follicular Phase,Legumes
+Red Lentil,Ovulatory Phase,Legumes
+Chickpea,Luteal Phase,Legumes
+Black soybean,Menstrual Phase,Legumes
+Kidney bean,Menstrual Phase,Legumes
+Brazil Nut,Follicular Phase,Nut
+Cashew,Follicular Phase,Nut
+Chicken,Follicular Phase,Meat
+Eggs,Follicular Phase,Meat
+Lamb,Ovulatory Phase,Meat
+Beef,Luteal Phase,Meat
+Turkey,Luteal Phase,Meat
+Duck,Menstrual Phase,Meat
+Pork,Menstrual Phase,Meat
+Fresh water clam,Follicular Phase,Seafood
+soft shell crab,Follicular Phase,Seafood
+Trout,Follicular Phase,Seafood
+Salmon,Ovulatory Phase,Seafood
+Shrimp,Ovulatory Phase,Seafood
+Tuna,Ovulatory Phase,Seafood
+Cod,Luteal Phase,Seafood
+Flounder,Luteal Phase,Seafood
+Halibut,Luteal Phase,Seafood
+Catfish,Menstrual Phase,Seafood
+Octopus,Menstrual Phase,Seafood
+Oyster,Menstrual Phase,Seafood
+Crab,Menstrual Phase,Seafood
+Sardine,Menstrual Phase,Seafood
+Lobster,Menstrual Phase,Seafood
+Scallop,Menstrual Phase,Seafood
+Mussels,Menstrual Phase,Seafood
+Squid,Menstrual Phase,Seafood
+Nut Butter,Follicular Phase,Other
+Olives,Follicular Phase,Other
+Pickles,Follicular Phase,Other
+Sauerkraut,Follicular Phase,Other
+Vinegar,Follicular Phase,Other
+Chocolate,Ovulatory Phase,Other
+Coffee,Ovulatory Phase,Other
+Turmeric,Ovulatory Phase,Other
+Mint,Luteal Phase,Other
+Peppermint,Luteal Phase,Other
+Spirulina,Luteal Phase,Other
+Tea,Menstrual Phase,Other
+Miso,Menstrual Phase,Other
+Tamari,Menstrual Phase,Other

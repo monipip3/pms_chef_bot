@@ -1,0 +1,598 @@
+502
+                        _id  ...                    new_id
+0  64d104c38a3a343dcd655378  ...  64d104c38a3a343dcd655378
+1  64d104c38a3a343dcd655379  ...  64d104c38a3a343dcd655379
+2  64d104c38a3a343dcd655384  ...  64d104c38a3a343dcd655384
+3  64d104c58a3a343dcd6553cb  ...  64d104c58a3a343dcd6553cb
+4  64d104c58a3a343dcd6553cc  ...  64d104c58a3a343dcd6553cc
+
+[5 rows x 12 columns]
+(502, 12)
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+64d104c38a3a343dcd655378 <class 'bson.objectid.ObjectId'>
+Chicken with Raspberry Vinegar <class 'str'>
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+64d104c38a3a343dcd655378 <class 'bson.objectid.ObjectId'>
+Chicken with Raspberry Vinegar <class 'str'>
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+64d104c38a3a343dcd655384 <class 'bson.objectid.ObjectId'>
+Pheasant Breasts W Cider Vinegar, Apples And Pomegranates <class 'str'>
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+64d104c38a3a343dcd655378 <class 'bson.objectid.ObjectId'>
+Chicken with Raspberry Vinegar <class 'str'>
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+64d104c38a3a343dcd655378 <class 'bson.objectid.ObjectId'>
+Chicken with Raspberry Vinegar <class 'str'>
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+64d104c88a3a343dcd655443 <class 'bson.objectid.ObjectId'>
+Blackberry Chicken <class 'str'>
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+64d104c88a3a343dcd65544d <class 'bson.objectid.ObjectId'>
+Golden Garlic Chicken with Sweet Potatoes <class 'str'>
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Horseradish and Beet Relish_generated_64d104c98a3a343dcd65546c.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Horseradish and Beet Relish_generated_64d104c98a3a343dcd65546c.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+64d104cd8a3a343dcd65550a <class 'bson.objectid.ObjectId'>
+Chicken Tarragon Fricassee with Watercress Salad <class 'str'>
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+64d104cd8a3a343dcd655526 <class 'bson.objectid.ObjectId'>
+Chicken Breasts Baked in Red Bell Peppers <class 'str'>
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+64d104ce8a3a343dcd655537 <class 'bson.objectid.ObjectId'>
+Bronchitis Broccoli, Too Hot To Trout And Celeriac Curry <class 'str'>
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Stuffed Mussels_generated_64d104cf8a3a343dcd655568.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Millet Raisin Wheat Bread_generated_64d104d08a3a343dcd655586.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Goan Spiced Crab Cakes Pappadums Avocado And Tamarind_generated_64d104d18a3a343dcd6555bf.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fried Eggplant with Creamed Shrimp and Crab_generated_64d104d28a3a343dcd6555dc.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+64d104d28a3a343dcd6555ed <class 'bson.objectid.ObjectId'>
+Chicken-Chive Royale <class 'str'>
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Endive Spears with Guacamole Bay Shrimp and Salsa_generated_64d104d38a3a343dcd655608.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Endive with Tomato Rosettes_generated_64d104d38a3a343dcd655623.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+64d104c88a3a343dcd65544d <class 'bson.objectid.ObjectId'>
+Golden Garlic Chicken with Sweet Potatoes <class 'str'>
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fried Cabbage_generated_64d104d58a3a343dcd65565a.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fried Cabbage_generated_64d104d58a3a343dcd65565a.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fried Cabbage_generated_64d104d58a3a343dcd65565a.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Medallions of Lamb with a Creamy Cabbage_generated_64d104d58a3a343dcd655661.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+64d104d58a3a343dcd655668 <class 'bson.objectid.ObjectId'>
+Goat Cheese And Olive-Stuffed Chicken Breasts <class 'str'>
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fresh Halibut Baked with Smoked Salmon_generated_64d104d58a3a343dcd65566e.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Horseradish Crusted Halibut_generated_64d104d58a3a343dcd65566f.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Halibut_generated_64d104d58a3a343dcd655670.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Halibut Braised in Spanish Pepper Sauce Light _generated_64d104d58a3a343dcd655671.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Halibut Broccoli Pie_generated_64d104d58a3a343dcd655672.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Halibut Cheeks and Vermouth_generated_64d104d58a3a343dcd655673.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Halibut Citrus Amandine_generated_64d104d58a3a343dcd655674.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Halibut Creole Cod May Be Used Instead _generated_64d104d58a3a343dcd655675.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Halibut Delight_generated_64d104d58a3a343dcd655676.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Halibut in a Yucatecan Marinade_generated_64d104d58a3a343dcd655677.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fried Celery Cabbage_generated_64d104d58a3a343dcd655678.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Green Beans And Celery Root Salad with Mustard Vinaigrette_generated_64d104d68a3a343dcd655679.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Chicken with Celery Sauce_generated_64d104d68a3a343dcd65567a.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Celery and Apricot Soup_generated_64d104d68a3a343dcd65567b.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Celery and Cabbage Bake_generated_64d104d68a3a343dcd65567c.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Celery and Carrot Salad_generated_64d104d68a3a343dcd65567d.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Celery and Carrot Salad_generated_64d104d68a3a343dcd65567d.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Celery and Crabmeat Salad_generated_64d104d68a3a343dcd65567f.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Celery Cake_generated_64d104d68a3a343dcd655680.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Celery Casserole_generated_64d104d68a3a343dcd655681.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Elegant Shrimp Artichoke Bake_generated_64d104d68a3a343dcd655682.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Elegant Spinach and Artichoke Casserole_generated_64d104d68a3a343dcd655683.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Emeril s Shrimp and Artichoke Salad_generated_64d104d68a3a343dcd655684.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fried Artichoke Hearts_generated_64d104d68a3a343dcd655685.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fried Artichokes Marinated in Garlic Vinaigrette_generated_64d104d68a3a343dcd655686.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Hot n Spicy Artichoke Shrimp Dip_generated_64d104d68a3a343dcd655687.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Chicken with Jerusalem Artichoke and Lemon_generated_64d104d68a3a343dcd655688.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Chicken Artichoke and Mushroom Casserole_generated_64d104d68a3a343dcd655689.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Chicken Artichoke and Rice Casserole_generated_64d104d68a3a343dcd65568a.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Caviar Artichoke Delight_generated_64d104d68a3a343dcd65568b.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/A Simple Sauce with Red Lentils_generated_64d104d68a3a343dcd65568c.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Red Lentil and Wild Rice Pilaf_generated_64d104d68a3a343dcd65568d.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Red Lentil Dahl_generated_64d104d68a3a343dcd65568e.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Red Lentil Lasagna_generated_64d104d68a3a343dcd65568f.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Red Lentil Soup_generated_64d104d68a3a343dcd655690.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Red Lentil Soup_generated_64d104d68a3a343dcd655690.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Red Lentil Soup Turkish _generated_64d104d68a3a343dcd655692.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Red Lentil Soup with Lime_generated_64d104d68a3a343dcd655693.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Red Lentil Soup with Rice Turkish _generated_64d104d68a3a343dcd655694.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Red Lentil Bulgur Loaf_generated_64d104d68a3a343dcd655695.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Chocolate Peppermint One Bowl Brownies_generated_64d104d68a3a343dcd655696.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Christmas Peppermint Candy Cheesecake_generated_64d104d68a3a343dcd655697.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Peppermint Angel Food Cake_generated_64d104d68a3a343dcd655698.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Peppermint Cake_generated_64d104d68a3a343dcd655699.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Peppermint Candy Brownies_generated_64d104d68a3a343dcd65569a.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Peppermint Candy Icicles_generated_64d104d68a3a343dcd65569b.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Peppermint Candy Resembling Pepto Bismol_generated_64d104d68a3a343dcd65569c.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Peppermint Cheesecake_generated_64d104d68a3a343dcd65569d.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Peppermint Chocolate Cake_generated_64d104d68a3a343dcd65569e.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Peppermint Chocolate Squares_generated_64d104d78a3a343dcd65569f.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Elegant Apple Dumpling_generated_64d104d78a3a343dcd6556a0.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Empanadas of Pork Prunes and Apples_generated_64d104d78a3a343dcd6556a1.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Endive and Apple Salad Martha Stewart Living_generated_64d104d78a3a343dcd6556a2.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fresh Morels with Apples and Butter Noodles_generated_64d104d78a3a343dcd6556a3.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fresh Pear and Apple Pie_generated_64d104d78a3a343dcd6556a4.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fresh Pineapple Pie_generated_64d104d78a3a343dcd6556a5.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fresh Pineapple Pie_generated_64d104d78a3a343dcd6556a5.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fresh Pineapple Sauce_generated_64d104d78a3a343dcd6556a7.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fresh Pineapple Slaw_generated_64d104d78a3a343dcd6556a8.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fresh Pineapple Upside Down Cake_generated_64d104d78a3a343dcd6556a9.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Alegria Amaranth Bars_generated_64d104d78a3a343dcd6556aa.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Amaranth And Corn_generated_64d104d78a3a343dcd6556ab.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Amaranth Banana Pancakes Vegan _generated_64d104d78a3a343dcd6556ac.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Squash Amaranth Patties_generated_64d104d78a3a343dcd6556ad.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Cabbage Stir Fry with Popped Amaranth_generated_64d104d78a3a343dcd6556ae.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Peanut Butter Amaranth Logs_generated_64d104d78a3a343dcd6556af.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Vegetable Amaranth Hin Choy _generated_64d104d78a3a343dcd6556b0.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Barley Amaranth Waffles_generated_64d104d78a3a343dcd6556b1.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Amaranth Date Nut Bread_generated_64d104d78a3a343dcd6556b2.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Amaranth Pancakes_generated_64d104d78a3a343dcd6556b3.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Elsie s Yellow Elbow Some Call It Crookneck Squash_generated_64d104d78a3a343dcd6556b4.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fresh Summer Squash Tomato Bake_generated_64d104d78a3a343dcd6556b5.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fried Eggplant and Squash with Taratour_generated_64d104d78a3a343dcd6556b6.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Goat Cheese Green Olive Truffles with Winter Squash Salad_generated_64d104d78a3a343dcd6556b7.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Gratin of Chayote And Acorn Squash_generated_64d104d78a3a343dcd6556b8.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Greek Style Salad with Spaghetti Squash_generated_64d104d78a3a343dcd6556b9.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Grill Roasted Butternut Squash_generated_64d104d78a3a343dcd6556ba.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Mashed Potatoes And Butternut Squash_generated_64d104d78a3a343dcd6556bb.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Mexican Butternut Squash Soup_generated_64d104d78a3a343dcd6556bc.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Honey Glazed Acorn Squash_generated_64d104d78a3a343dcd6556bd.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Chicken with Broccoli and Cashews_generated_64d104d78a3a343dcd6556be.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Chicken with Cashew Curried Stir Fry_generated_64d104d78a3a343dcd6556bf.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Chicken with Lemon Grass and Cashews_generated_64d104d78a3a343dcd6556c0.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Carrot Cashew Soup_generated_64d104d78a3a343dcd6556c1.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Cashew Butter Xmas _generated_64d104d78a3a343dcd6556c2.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Cashew Ham and Pea Salad_generated_64d104d78a3a343dcd6556c3.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Oat and Cashew Waffles_generated_64d104d78a3a343dcd6556c4.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Szechuan Cashew Chicken_generated_64d104d78a3a343dcd6556c5.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Szechwan Cashew Chicken_generated_64d104d78a3a343dcd6556c6.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Szechwan Chicken and Cashews_generated_64d104d78a3a343dcd6556c7.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Ellen s Beef Stew_generated_64d104d78a3a343dcd6556c8.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/English Beef Pot Pie_generated_64d104d78a3a343dcd6556c9.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fried Beef with Watercress Salad Bo Luc Lac _generated_64d104d78a3a343dcd6556ca.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fried Crispy Shredded Beef_generated_64d104d88a3a343dcd6556cb.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Good For You Beef Stew 4 Points _generated_64d104d88a3a343dcd6556cc.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Griddled Fillet of Beef with Honey Roasted Beetroot_generated_64d104d88a3a343dcd6556cd.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Meat Beef a la Will Moreland_generated_64d104d88a3a343dcd6556ce.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Meat Free Beef Strogonoff_generated_64d104d88a3a343dcd6556cf.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Medallions of Beef W iowa Blue Cheese Sauce_generated_64d104d88a3a343dcd6556d0.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Mediterranean Ground Beef with Filo Crown_generated_64d104d88a3a343dcd6556d1.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Green Peppers And Tofu Sauteed with Miso_generated_64d104d88a3a343dcd6556d2.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Green Tea And Mushroom Broth with Miso_generated_64d104d88a3a343dcd6556d3.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Mild Miso Soup_generated_64d104d88a3a343dcd6556d4.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Beef Misoyaki_generated_64d104d88a3a343dcd6556d5.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Cauliflower Millet Miso_generated_64d104d88a3a343dcd6556d6.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Walnut Miso Condiments_generated_64d104d88a3a343dcd6556d7.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/About Miso_generated_64d104d88a3a343dcd6556d8.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Salmon in Miso Miso Is Fermented Soy Bean Paste _generated_64d104d88a3a343dcd6556d9.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Cilantro Miso Sauce_generated_64d104d88a3a343dcd6556da.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Sauted Eggplant with Miso Sauce_generated_64d104d88a3a343dcd6556db.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Chiffonade of Lobster_generated_64d104d88a3a343dcd6556dc.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Piri Piri Lobster with Saffron Linguine_generated_64d104d88a3a343dcd6556dd.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Pizza with Lobster And Pesto_generated_64d104d88a3a343dcd6556de.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Corn Crepes and Lobster Stack_generated_64d104d88a3a343dcd6556df.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Almost Lobster Tail Monkfish Fillets _generated_64d104d88a3a343dcd6556e0.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Joanne Woodward Lobster Tails in Patty Shells_generated_64d104d88a3a343dcd6556e1.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Joe s Lobster Bisque_generated_64d104d88a3a343dcd6556e2.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Soft Scrambled Eggs with Lobster_generated_64d104d88a3a343dcd6556e3.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Mock Lobster Dip_generated_64d104d88a3a343dcd6556e4.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Mock Lobster Flemish Style_generated_64d104d88a3a343dcd6556e5.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fresh Grapefruit in Honey Thyme Sauce_generated_64d104d88a3a343dcd6556e6.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Fresh Grapefruit Sherbet_generated_64d104d88a3a343dcd6556e7.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Grapefruit And Banana Rum Gratins_generated_64d104d88a3a343dcd6556e8.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Grapefruit And Campari Granita_generated_64d104d88a3a343dcd6556e9.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Grapefruit And Ginger Marmalade_generated_64d104d88a3a343dcd6556ea.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Grapefruit Conditioning Lip Balm_generated_64d104d88a3a343dcd6556eb.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Grapefruit Crunchy Oat Squares_generated_64d104d88a3a343dcd6556ec.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Grapefruit Halves with Ginger Curtis_generated_64d104d88a3a343dcd6556ed.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Grapefruit in a Simple Rosemary Syrup_generated_64d104d88a3a343dcd6556ee.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Grapefruit in Tequila_generated_64d104d88a3a343dcd6556ef.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Elegant and Easy Wild Rice_generated_64d104d88a3a343dcd6556f0.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Chicken Wild Rice and Pecan Salad in Romaine Spears_generated_64d104d88a3a343dcd6556f1.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Chicken Wild Rice Casserole_generated_64d104d88a3a343dcd6556f2.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Walnut and Wild Rice Chicken Salad_generated_64d104d88a3a343dcd6556f3.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Jello Wild Rice Salad_generated_64d104d88a3a343dcd6556f4.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Nutted Wild Rice Culinary Amer _generated_64d104d88a3a343dcd6556f5.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Nutty Wild Rice Sausage Stuffing_generated_64d104d88a3a343dcd6556f6.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Acorn Squash and Wild Rice_generated_64d104d98a3a343dcd6556f7.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Apricot Wild Rice Stuffing_generated_64d104d98a3a343dcd6556f8.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Chicken with Roasted Pears And Wild Rice_generated_64d104d98a3a343dcd6556f9.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Poached Flounder_generated_64d104d98a3a343dcd6556fa.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Marinated Flounder Rolls_generated_64d104d98a3a343dcd6556fb.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Pancetta Stuffed Flounder W boiled New Potatoes Hollandais_generated_64d104d98a3a343dcd6556fc.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Stuffed Flounder Rolls 3 Points _generated_64d104d98a3a343dcd6556fd.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Sauteed Flounder with Tomatoes And Olives_generated_64d104d98a3a343dcd6556fe.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Pla Preeo Wan Sweet and Sour Flounder _generated_64d104d98a3a343dcd6556ff.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Pan Fried Flounder in Cornmeal W Oyster Artichoke Relish_generated_64d104d98a3a343dcd655700.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Creamed Flounder Tarragon_generated_64d104d98a3a343dcd655701.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Great Grilled Flounder_generated_64d104d98a3a343dcd655702.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Saved image ./recipe_images/Broiled Flounder with Bread Crumb Topping_generated_64d104d98a3a343dcd655703.jpeg
+Continuing
+Sending REST request to https://api.stability.ai/v2beta/stable-image/generate/sd3...
+Traceback (most recent call last):
+  File "/Users/monicapuerto/Desktop/Github/pms_chef_bot/generate_recipe_images.py", line 175, in <module>
+    response = send_generation_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/monicapuerto/Desktop/Github/pms_chef_bot/generate_recipe_images.py", line 49, in send_generation_request
+    response = requests.post(
+               ^^^^^^^^^^^^^^
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/site-packages/requests/adapters.py", line 589, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/site-packages/urllib3/connectionpool.py", line 537, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/site-packages/urllib3/connection.py", line 466, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/http/client.py", line 1395, in getresponse
+    response.begin()
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/http/client.py", line 325, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/http/client.py", line 286, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/ssl.py", line 1314, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/monicapuerto/envs/twilio_py/lib/python3.11/ssl.py", line 1166, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
